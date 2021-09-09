@@ -1,1 +1,1 @@
-simple header and footer design to use on the other pages.
+Base website for editing

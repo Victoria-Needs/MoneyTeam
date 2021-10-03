@@ -1,0 +1,264 @@
+/* removes edges and borders on page */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: rgb(235, 231, 231);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* header */
+header{
+    background: #4431ee;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.heading{
+    float: left;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    color:#04ff2d;
+    font-weight: 450;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+nav{
+    float: right;
+}
+
+nav a{
+    color: #04ff2d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color:rgb(226, 167, 122);
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 15px;
+
+    position: relative;
+}
+
+nav a:before{
+    content: '';
+    display:block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(226, 167, 122);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: #4431ee;
+    padding: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 180px;
+    /* Change this to make footer lower */
+    margin-top: 50px;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 50px;
+    margin-left: auto;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3 ease;
+    width:fit-content;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .comms a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+text-decoration: none;
+transition: all 0.5s ease;
+}
+
+.footer-col .comms a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* class */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.container2{
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Naveen Changes */
+h1 {
+    size: 50px;
+    text-align: center;
+}
+
+p {
+    size: 25px;
+}
+
+.calccontent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.trinket {
+    text-align: center;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00FF6C, #4431ee);
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }

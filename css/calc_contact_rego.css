@@ -71,12 +71,16 @@ nav a:hover:before{
 }
 
 body{
-    margin: 0;
-    background: #f0f0f0;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    padding-bottom: 190px;    /* makes sure body content isn't hidden by footer*/
-    }
+  margin: 0;
+  background: #f0f0f0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+.contentarea {
+  min-height: calc(100vh - 227px);
+}
 
 /* footer */
 footer {
@@ -85,7 +89,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 180px;
     width: 100%;
-    position: fixed;
+    position: static;
     bottom: 0;
 }
 

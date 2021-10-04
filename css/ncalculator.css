@@ -2,16 +2,10 @@
 *{
     box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background: rgb(235, 231, 231);
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-}
 
 /* header */
 header{
-    background: #4431ee;
+    background: #1a0d8f;
 }
 
 header::after{
@@ -24,9 +18,9 @@ header::after{
     float: left;
     padding: 10px 0;
     letter-spacing: 2px;
-    color:#04ff2d;
-    font-weight: 450;
+    color: #c2f2c9;
     font-size: 20px;
+    text-shadow: 2px 2px 1.5px #3d3d3d, 2px 2px 1.5px #3d3d3d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
@@ -36,7 +30,7 @@ nav{
 }
 
 nav a{
-    color: #04ff2d;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -65,12 +59,10 @@ nav a:before{
     display:block;
     height: 5px;
     width: 100%;
-    background-color: rgb(226, 167, 122);
-
+    background-color: #e91e63;
     position: absolute;
     top: 0;
     width: 0%;
-
     transition: all ease-in-out 250ms;
 }
 
@@ -78,17 +70,27 @@ nav a:hover:before{
     width: 100%;
 }
 
+body{
+    margin: 0;
+    background: rgb(235, 231, 231);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
 
-
+.contentarea {
+  min-height: calc(100vh - 227px);
+}
 
 /* footer */
-footer{
-    background-color: #4431ee;
-    padding: 5px 0;
+footer {
+    background-color: #1a0d8f;
+    padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 180px;
-    /* Change this to make footer lower */
-    margin-top: 50px;
+    width: 100%;
+    position: static;
+    bottom: 0;
 }
 
 .footer-col{
@@ -169,7 +171,7 @@ footer ul{
 }
 
 .row{
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
 }
 .container2{
@@ -209,13 +211,13 @@ p {
     font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
   }
-  
+
   body {
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, #00FF6C, #4431ee);
   }
-  
+
   .calculator-grid {
     display: grid;
     justify-content: center;
@@ -224,7 +226,7 @@ p {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
   }
-  
+
   .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
@@ -232,15 +234,15 @@ p {
     outline: none;
     background-color: rgba(255, 255, 255, .75);
   }
-  
+
   .calculator-grid > button:hover {
     background-color: rgba(255, 255, 255, .9);
   }
-  
+
   .span-two {
     grid-column: span 2;
   }
-  
+
   .output {
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, .75);
@@ -252,12 +254,12 @@ p {
     word-wrap: break-word;
     word-break: break-all;
   }
-  
+
   .output .previous-operand {
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
   }
-  
+
   .output .current-operand {
     color: white;
     font-size: 2.5rem;

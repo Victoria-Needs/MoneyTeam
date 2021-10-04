@@ -75,7 +75,6 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     height: 100%;
-    padding-bottom: 190px;    /* makes sure body content isn't hidden by footer*/
   }
 
 p {
@@ -85,6 +84,10 @@ p {
     font-size: 1.2em;
   }
 
+.contentarea {
+  min-height: calc(100vh - 227px);
+}
+
 /* footer */
 footer {
     background-color: #1a0d8f;
@@ -92,7 +95,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 180px;
     width: 100%;
-    position: fixed;
+    position: static;
     bottom: 0;
 }
 

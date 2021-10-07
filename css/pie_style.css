@@ -48,8 +48,8 @@ padding-bottom: 200px;
 	border-bottom-right-radius: 30px;
 	border-top-right-radius: 30px;
 	height: 100%;
-
 	padding: 100px;
+	color: #b2b5bf;
 }
 
 
@@ -78,7 +78,6 @@ padding-bottom: 200px;
 
 .expenses-input{
 
-
 	background-color: #dd3b79;
 	border: none;
 	color: white;
@@ -94,7 +93,6 @@ color: white;
 }
 
 .form-control:focus{
-
 	background-color: transparent;
 	color: white;
 	border: none;

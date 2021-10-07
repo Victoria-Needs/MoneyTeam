@@ -19,7 +19,6 @@ header::after{
     letter-spacing: 2px;
     color: #c2f2c9;
     font-size: 20px;
-    max-width: 30%;
     text-shadow: 2px 2px 1.5px #3d3d3d, 2px 2px 1.5px #3d3d3d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -201,10 +200,9 @@ footer ul{
 
 /* class */
 .container{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 5px;
-    overflow: hidden;
 }
 
 .row{

@@ -11,17 +11,20 @@
 .overlay{
 
 	background-color: #333333e2;
-	height: 1000px;
+	min-height: calc(100vh - 227px);
 	padding-top: 200px;
 padding-bottom: 200px;
 }
 
 
-.pie_chart_content .container{
+.pie_chart_content .piecontainer{
 
 	background-color: white;
 	border-radius: 40px;
 	padding: 0px;
+	max-width: 70%;
+	margin: auto;
+
 }
 
 .main_box h1{
@@ -45,7 +48,7 @@ padding-bottom: 200px;
 	border-bottom-right-radius: 30px;
 	border-top-right-radius: 30px;
 	height: 100%;
-	
+
 	padding: 100px;
 }
 

@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
-
-
-body{
-
-	font-family: 'poppins';
-	color: white;
-	text-align: center;
-	font-size: 14px;
+*{
+    box-sizing: border-box;
 }
 
-/* Header and Nav */
+/* header */
 header{
-    background: #4431ee;
+    background: #1a0d8f;
 }
 
 header::after{
@@ -24,9 +17,9 @@ header::after{
     float: left;
     padding: 10px 0;
     letter-spacing: 2px;
-    color:#04ff2d;
-    font-weight: 450;
+    color: #c2f2c9;
     font-size: 20px;
+    text-shadow: 2px 2px 1.5px #3d3d3d, 2px 2px 1.5px #3d3d3d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
@@ -36,14 +29,15 @@ nav{
 }
 
 nav a{
-    color: #04ff2d;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 1px 1px #3d3d3d;
     font-size: 14px;
 }
 
 nav a:hover{
-    color:rgb(226, 167, 122);
+    color: rgb(226, 167, 122);
 }
 
 nav ul{
@@ -56,7 +50,6 @@ nav li{
     display: inline-block;
     margin-left: 30px;
     padding-top: 15px;
-
     position: relative;
 }
 
@@ -65,17 +58,65 @@ nav a:before{
     display:block;
     height: 5px;
     width: 100%;
-    background-color: rgb(226, 167, 122);
-
+    background-color: #e91e63;
     position: absolute;
     top: 0;
     width: 0%;
-
     transition: all ease-in-out 250ms;
 }
 
 nav a:hover:before{
     width: 100%;
+}
+
+body{
+    margin: 0;
+    background: #f0f0f0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+  }
+
+p {
+  padding: 50px 20% 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.contentarea {
+  min-height: calc(100vh - 227px);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  line-height: 2;
+  font-size: 1.3em;
+  color: #52000e;
+}
+
+.column a:hover {
+  text-decoration: overline;
+  color: #00470a;
+}
+
+.column a:active {
+  color:  #c2f2c9;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 /* footer */
@@ -158,8 +199,8 @@ footer ul{
 }
 
 /* class */
-.container{
-    width: 80%;
+.head_container{
+    width: 95%;
     margin: 0 auto;
     border-radius: 5px;
 }

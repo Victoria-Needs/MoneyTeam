@@ -1,9 +1,196 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
+
+
+body{
+
+	font-family: 'poppins';
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Header and Nav */
+header{
+    background: #4431ee;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.heading{
+    float: left;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    color:#04ff2d;
+    font-weight: 450;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+nav{
+    float: right;
+}
+
+nav a{
+    color: #04ff2d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color:rgb(226, 167, 122);
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 15px;
+
+    position: relative;
+}
+
+nav a:before{
+    content: '';
+    display:block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(226, 167, 122);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background-color: #1a0d8f;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 180px;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 50px;
+    margin-left: auto;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+.footer-col h4:before{
+    content: '';
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: all 0.3 ease;
+    width:fit-content;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .comms a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.footer-col .comms a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* class */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2{
+    max-width: 1170px;
+    margin: auto;
+    border-radius: 5px;
+    bottom: 0;
+}
+
+h1 {
+    size: 50px;
+    text-align: center;
+}
+
+
+.calccontent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 /*Pie chart*/
 
 .pie_chart_content{
 
-	height: 100%;
+	height: auto;
 	background-image: url("https://images.pexels.com/photos/259165/pexels-photo-259165.jpeg?cs=srgb&dl=pexels-pixabay-259165.jpg&fm=jpg");
 }
 
@@ -11,20 +198,17 @@
 .overlay{
 
 	background-color: #333333e2;
-	padding-top: 280px;
+	height: 1000px;
+	padding-top: 200px;
 padding-bottom: 200px;
-	max-width: 100%;
 }
 
 
-.pie_chart_content .piecontainer{
+.pie_chart_content .container{
 
 	background-color: white;
 	border-radius: 40px;
 	padding: 0px;
-	max-width: 95%;
-	margin: auto;
-
 }
 
 .main_box h1{
@@ -48,8 +232,8 @@ padding-bottom: 200px;
 	border-bottom-right-radius: 30px;
 	border-top-right-radius: 30px;
 	height: 100%;
+	
 	padding: 100px;
-	color: #b2b5bf;
 }
 
 
@@ -78,6 +262,7 @@ padding-bottom: 200px;
 
 .expenses-input{
 
+
 	background-color: #dd3b79;
 	border: none;
 	color: white;
@@ -93,6 +278,7 @@ color: white;
 }
 
 .form-control:focus{
+
 	background-color: transparent;
 	color: white;
 	border: none;
